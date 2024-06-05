@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Comment</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+  <h1 class="comment-heading">Make a new comment</h1>
+    <form action="/comments" method="post">
+        <label for="username"><b>Enter Username:</b></label>
+        <input type="text" id="username" placeholder="Username" name="username" required><br>
+        <label for="comment"><b>Comment Text</b></label><br>
+        <textarea id="comment" cols="30" rows="5" name="comment" required></textarea><br>
+        <button type="submit"><b>Submit</b></button>
+    </form>
+    <a href="/comments">Back to Index</a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Comment</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 class="comment-heading">Make a new comment</h1>
+    <form class="comment-form" action="/comments" method="post">
+        <label for="username"><b>Enter Username:</b></label>
+        <input type="text" id="username" placeholder="username" name="username" />
+        <br>
+        <label for="comment"><b>Comment Text</b></label>
+        <br>
+        <textarea id="comment" cols="30" rows="5" name="comment"></textarea>
+        <br>
+        <button><b>Submit</b></button>
+    </form>
+    <a href="/comments">Back to Index</a>
+</body>
+</html>

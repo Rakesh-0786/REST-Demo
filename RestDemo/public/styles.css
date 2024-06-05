@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading styles */
+.comment-heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.comment-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #45a049;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Specific link styles */
+.back-to-index {
+    background-color: #4CAF50;
+}
+
+.edit-comment {
+    background-color: #FFC107;
+}
+
+
+
+/* Delete button styles */
+.delete-button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.delete-button:hover {
+    background-color: #D32F2F;
+}
