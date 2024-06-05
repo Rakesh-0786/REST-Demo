@@ -1,19 +1,46 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Index</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="comment-heading">Comments</h1>
+        <ul>
+            <% for(let c of comments) { %>
+                <li>
+                    <%= c.comment %> - <b><%= c.username %></b>
+                    <a class="details-link" href="/comments/<%= c.id %>">Details</a>
+                </li>
+            <% } %>
+        </ul>
+        <a href="/comments/new" class="new-comment">New Comment</a>
+    </div>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comments Index</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Comments</h1>
-    <!-- <p>comments</p> -->
-    <ul>
-        <% for(let c of comments) {%>
-            <li><%=c.comment %> - <b><%=c.username%></b></li>
-            <a href="/comments/<%=c.id %>">details</a>
-            <%}%>
-    </ul>
-    <a href="/comments/new">New Comment</a>
+    <div class="container">
+        <h1 class="comment-heading">COMMENTS</h1>
+        <ul class="comments-list">
+            <% for(let c of comments) { %>
+                <li>
+                    <span class="comment-text"><%= c.comment %> - <b><%= c.username %></b></span>
+                    <a class="details-link" href="/comments/<%= c.id %>">Details</a>
+                </li>
+            <% } %>
+        </ul>
+        <a class="new-comment" href="/comments/new">New Comment</a>
+    </div>
 </body>
 </html>
